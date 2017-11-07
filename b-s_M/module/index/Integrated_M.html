@@ -1,0 +1,40 @@
+<style>
+  .layui-nav-child {
+    top: 60px;
+  }
+</style>
+<div>
+  <header>
+    <ul class="layui-nav" lay-filter="">
+      {{each menu as t i}}
+        <li class="layui-nav-item">
+          <a class="list" data-id="{{t.id}}">{{t.name}}</a>
+            {{if (t.child)}}
+              <dl class="layui-nav-child">
+              {{each t.child as k j}}
+                <dd class="chid-list" data-id="{{k.id}}">
+                  <a>{{k.name}}</a>
+                </dd>
+              {{/each}}
+              </dl>
+            {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+  </header>
+  <nav>
+    <button class="layui-btn layui-btn-normal">百搭按钮</button>
+    <button class="layui-btn layui-btn-normal">百搭按钮</button>
+    <button class="layui-btn layui-btn-normal">百搭按钮</button>
+    <button class="layui-btn layui-btn-normal">百搭按钮</button>
+  </nav>
+  <section class="J_content_child">
+
+  </section>
+  <footer>
+
+  </footer>
+</div>
+<script>
+
+</script>

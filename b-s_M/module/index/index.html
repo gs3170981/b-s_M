@@ -1,0 +1,36 @@
+<style>
+
+</style>
+<div>
+  <header>
+    <ul class="layui-nav ">
+      <li class="layui-nav-item">
+        <a href="">意见反馈<span class="layui-badge">9</span></a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="">个人中心<span class="layui-badge-dot"></span></a>
+      </li>
+      <li class="layui-nav-item">
+        <a href=""><img src="img/tx.png" class="layui-nav-img">o︻そ╆OVE▅▅▅▆▇◤</a>
+      </li>
+    </ul>
+  </header>
+  <nav>
+    <ul class="layui-nav layui-bg-blue" lay-filter="">
+      {{each menu as t i}}
+        <li class="layui-nav-item">
+          <a href="{{t.href}}">{{t.title}}</a>
+        </li>
+      {{/each}}
+    </ul>
+  </nav>
+  <section class="J_content">
+    {{include './index/index'}}
+  </section>
+  <footer>
+
+  </footer>
+</div>
+<script>
+
+</script>
